@@ -1,77 +1,57 @@
 <!Doctype html>
-<html><head> <style>
-  #space{
-    max-widht: 720px;
-    margin: 40px auto 0 auto;
+<html><head> <title>webapp</title><style>
 
+#banner{
+  width: 100%;
+  height: 360px;
+  /* object-fit: cover;
+   */
+  
 
-  }
-
-
-
-
-
-  h1{
-    font-size: 48px;
-    font-family: Roboto;
-    font-weight: normal;
-    color: rgb(100,50,75);
-   text-align: center;
-
-  }
-
-  #first {
-    width: 100%;
-    height: 360px;
-    /* object-ficoverver; */
-  }
-
-  h2{
-    font-size: 28px;
-    font-family: Roboto;
-    color: rgb(0,0,0);
-    text-align: center;
-    font-weight: normal;
-
-  }
+  
+}
+  
+  
+  
 
 
 
-  /* p{
-    color: rgb(0,0,0)
-  }
- */
-  /* #bo{
-  color: rgb(255,0,0) */
+</style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-
-  }
-</style><title>webapp</title>
- <!-- <icon>
-  <link rel = "icon"
-    heref = "https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F420101471500743334%2F&psig=AOvVaw1aIY3agpeD4TECd26ZCMZi&ust=1697576356444000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNja_--6-4EDFQAAAAAdAAAAABAE"
-</icon> --> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
 
 
 </head>
 
   <body>
-<h1>CareerBoost</h1>
-    <img id = "first" src = "https://repo-1--jayantpradhan62.repl.co/static/charlesdeluvio-Lks7vei-eAg-unsplash-2.jpg" height = 150 width = 600
+     <div class = "container"><h1 class = "text-center mb-4 mt-2">CareerBoost</h1>
+    <img class = "img-fluid" id = "banner"src = "https://repo-1--jayantpradhan62.repl.co/static/charlesdeluvio-Lks7vei-eAg-unsplash-2.jpg" height = 150 width = 600
 
       <h2>  </h2>
-      <div id = "space"><h2>About Us</h2>
+   <h2 class = "mt-4">About Us</h2>
 
-<p>
-      Welcome to our trainig institue.we are a group of professionals
-      who are comitted to delivering quality education helping them acquire the skills needed to boost their career.
+<p class = "lead">
+  CareerBoost is your go-to platform for career elevation. We provide a diverse range of expert-led courses designed to enhance your skills and propel your professional journey. Join us and boost your career to new heights.
+      <!-- Welcome to our trainig institue.we are a group of professionals
+      who are comitted to delivering quality education helping them acquire the skills needed to boost their career. -->
     </p>
 
 
 
-    <h2>Our Plans</h2>
-    <p id = "bo">show plans</p>
-    <div style = text-align:center;><button>Book Demo Class</button></div></div>
+    <h2 class = "mt-4">Our Plans</h2>
+    <!-- <!-- <p id = "bo" class= "lead">{{plans}}</p> -->
+    <!-- <div> -->
+      {% for plan in plans %}
+       {% include 'desc.html' %}
+     
+      {% endfor %}
+       
+    <!-- </div> -->
+       
+    <div style = text-align:center;><button class = "btn btn-primary btn-lg mt-4">Book Demo Class</button><p class = "text-body-secondary mt-4">Copyright 2023,CareerBoost.Ltd</p></div></div>
   </body>
 </html>
