@@ -26,7 +26,7 @@ X  = ["hello","hii"]
 
 @app.route('/')
 def build():
-  return render_template("we2.html",plans = PLANS)
+  return render_template("we.html",plans = PLANS)
 
 @app.route('/api/plans')
 def plan():

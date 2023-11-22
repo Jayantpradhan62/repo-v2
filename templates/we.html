@@ -28,6 +28,8 @@
 </head>
 
   <body>
+    {% include 'nav.html' %}
+    <div style = "margin-top:75px">
      <div class = "container"><h1 class = "text-center mb-4 mt-2">CareerBoost</h1>
     <img class = "img-fluid" id = "banner"src = "https://repo-1--jayantpradhan62.repl.co/static/charlesdeluvio-Lks7vei-eAg-unsplash-2.jpg" height = 150 width = 600
 
@@ -46,21 +48,13 @@
     <!-- <!-- <p id = "bo" class= "lead">{{plans}}</p> -->
     <!-- <div> -->
       {% for plan in plans %}
-      <div><h3 class = "mt-4">{{plan["course"]}}</h3>
-        
-        <div style= "color:rgb(120,120,120)"><b></b>DURATION:</b> {{plan["duration"]}}</div>
-        {% if "Price" in plan}
-        
-        <div style= "color:rgb(120,120,120)"><b></b>PRICE:</b> {{plan["Price"]}}</div>
-        {% endif %}
-        
+       {% include 'desc.html' %}
 
-
-      </div>
       {% endfor %}
 
     <!-- </div> -->
 
-    <div style = text-align:center;><button class = "btn btn-primary btn-lg mt-2">Book Demo Class</button><p class = "text-body-secondary mt-4">Copyright 2023,CareerBoost.Ltd</p></div></div>
+    <div style = text-align:center;><button class = "btn btn-primary btn-lg mt-4">Book Demo Class</button><p class = "text-body-secondary mt-4">Copyright 2023,CareerBoost.Ltd</p></div></div>
+  </div>
   </body>
 </html>
