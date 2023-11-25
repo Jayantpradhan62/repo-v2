@@ -10,6 +10,14 @@
 
   
 }
+
+#bes{
+  margin-top: 64px;
+  margin-bottom: 32px;
+
+
+
+}  
   
   
   
@@ -29,17 +37,23 @@
 
   <body>
     {% include 'nav.html' %}
-     <div class = "container"><h1 class = "text-center mb-4 mt-4">CareerBoost</h1>
+     <div class = "container"><h1 class = "text-center mb-4 mt-2">CareerBoost</h1>
     <img class = "img-fluid" id = "banner"src = "https://repo-1--jayantpradhan62.repl.co/static/charlesdeluvio-Lks7vei-eAg-unsplash-2.jpg" height = 150 width = 600
 
       <h2>  </h2>
+       <div class ="bes"><div class = "col" style = "margin: bottom 16px;;margin-top:32px;">
+       <div class = "row-6">
    <h2 class = "mt-4">About Us</h2>
 
 <p class = "lead">
   CareerBoost is your go-to platform for career elevation. We provide a diverse range of expert-led courses designed to enhance your skills and propel your professional journey. Join us and boost your career to new heights.
       <!-- Welcome to our trainig institue.we are a group of professionals
       who are comitted to delivering quality education helping them acquire the skills needed to boost their career. -->
-    </p>
+    </p></div>
+       <div class = "row-6"> 
+         <img src = "/static/sur.jpg" style = "height: 420px; margin-top: 32px; border-radius:4px;"
+       </div>
+       </div></div>
 
 
 
@@ -53,6 +67,7 @@
        
     <!-- </div> -->
        
-    <div style = text-align:center;><button class = "btn btn-primary btn-lg mt-4">Book Demo Class</button><p class = "text-body-secondary mt-4">Copyright 2023,CareerBoost.Ltd</p></div></div>
+    <div style = text-align:center;><a href="https://repo-1--jayantpradhan62.repl.co/Demo" type = "button"class = "btn btn-primary btn-lg mt-4">Book Demo Class</a><p class = "text-body-secondary mt-4">Copyright 2023,CareerBoost.Ltd</p></div></div>
+    {% include 'footer2.html' %}
   </body>
 </html>

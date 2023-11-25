@@ -26,11 +26,20 @@ X  = ["hello","hii"]
 
 @app.route('/')
 def build():
-  return render_template("we.html",plans = PLANS)
+  return render_template("we2.html",plans = PLANS)
 
 @app.route('/api/plans')
 def plan():
   return jsonify(PLANS)
+
+@app.route('/Data-Science')
+def DataScience():
+  return render_template("DS.html")
+
+@app.route('/Demo')
+def Demo():
+  return render_template("Demo.html")
+
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0",debug=True)
