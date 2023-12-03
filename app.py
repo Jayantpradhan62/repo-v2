@@ -16,7 +16,7 @@ PLANS = [{"id":"1",
            "duration":"3 months",
            "Price":"$129 USD"},
         {"id":"4",
-           "course":"Software Devlopment",
+           "course":"Game Devlopment",
            "duration":"6 months",
            "Price":"$299 USD"}]
 
