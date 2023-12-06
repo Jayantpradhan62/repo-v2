@@ -7,11 +7,13 @@ import pymysql
 
 from sqlalchemy import create_engine
 
+import os
 
 
-da =  "mysql+pymysql://jtc4zdg6f7fghnva8cld:pscale_pw_SLNbpvfEwj3V7qNCFDCeIhU4V8yQ0NBMor3t4MTKVuy@aws.connect.psdb.cloud/careerboost?charset=utf8mb4"
 
-engine = create_engine(da,connect_args = {
+my_secret = os.environ['DATA_SECRET']
+
+engine = create_engine(my_secret,connect_args = {
   "ssl":{
     "ssl_ca": "/etc/ssl/cert.pem"
     
