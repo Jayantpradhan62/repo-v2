@@ -1,5 +1,7 @@
 from flask import Flask,render_template,jsonify
 
+from data import load_from_database
+
 app = Flask(__name__)
 
 
@@ -26,7 +28,8 @@ X  = ["hello","hii"]
 
 @app.route('/')
 def build():
-  return render_template("we2.html",plans = PLANS)
+  PLANES = load_from_database()
+  return render_template("we2.html",plans = PLANES)
 
 @app.route('/api/plans')
 def plan():
