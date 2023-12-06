@@ -41,7 +41,7 @@ def DataScience():
 
 @app.route('/Demo')
 def Demo():
-  return render_template("Demo.html")
+  return render_template("dem.html")
 
 
 if __name__ == "__main__":
