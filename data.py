@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 
 
 
-da =  "mysql+pymysql://ie1qyx7zcv465r6m3zeb:pscale_pw_slwVmHGWUlvrITlsNAxHpb5J0EudJS7iGIabukZxAXY@aws.connect.psdb.cloud/careerboost?charset=utf8mb4"
+da =  "mysql+pymysql://jtc4zdg6f7fghnva8cld:pscale_pw_SLNbpvfEwj3V7qNCFDCeIhU4V8yQ0NBMor3t4MTKVuy@aws.connect.psdb.cloud/careerboost?charset=utf8mb4"
 
 engine = create_engine(da,connect_args = {
   "ssl":{
