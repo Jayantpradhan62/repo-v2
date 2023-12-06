@@ -8,7 +8,6 @@ import pymysql
 from sqlalchemy import create_engine
 
 
-from collections import defaultdict,OrderedDict
 
 da =  "mysql+pymysql://ie1qyx7zcv465r6m3zeb:pscale_pw_slwVmHGWUlvrITlsNAxHpb5J0EudJS7iGIabukZxAXY@aws.connect.psdb.cloud/careerboost?charset=utf8mb4"
 
