@@ -32,8 +32,41 @@ def load_from_database():
 
   for u in x:
     u_as_dict = u._mapping
-    y.append(u_as_dict)
+    y.append(dict(u_as_dict))
 
   return y
+
+def tex(id):
+  te = f"select * from plans where id = {id} "
+  return te
+   
+
+
+def plan_details(id):
+  with engine.connect() as con:
+    result = con.execute(
+      text(tex(id))
+    )
+    re = result.all()
+
+    re_dict = re[0]._mapping
+    
+
+    return dict(re_dict)
+
+m = plan_details(2)
+
+print(m)
+
+print(type(m))
+
+
+
+
+
+
+
+
+
 
 

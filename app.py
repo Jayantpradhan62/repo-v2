@@ -1,6 +1,6 @@
 from flask import Flask,render_template,jsonify
 
-from data import load_from_database
+from data import load_from_database,plan_details
 
 app = Flask(__name__)
 
@@ -34,6 +34,15 @@ def build():
 @app.route('/api/plans')
 def plan():
   return jsonify(PLANS)
+
+@app.route('/courses/<id>')
+def show(id):
+  course_details = plan_details(id)
+  
+  return render_template("plandesc.html",cs = course_details)
+
+  
+  # return jsonify(course_details)
 
 @app.route('/Data-Science')
 def DataScience():
